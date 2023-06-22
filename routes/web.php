@@ -19,12 +19,6 @@ use App\Http\Controllers\LoginController;
 //     return view('welcome');
 // });
 
-
-
-// Route::get('/', function () {
-//     return view('auth/login');
-// });
-
 Route::get('/signup', function () {
     return view('signup');
 });
@@ -35,4 +29,10 @@ Route::post('/', 'App\Http\Controllers\Auth\LoginController@login')->name('login
 
 Route::get('/discover', function () {
     return view('discover');
+});
+Route::get('/friend', function () {
+    return view('friend');
+});
+Route::get('/profile', function () {
+    return view('profile');
 });

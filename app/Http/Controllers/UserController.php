@@ -36,7 +36,7 @@ class UserController extends Controller
         if($user->save()){
             // Created
             Session::flash('success', 'User created succesfully.');
-            return redirect()->route('/');
+            return redirect()->route('login');
         }else{
             // Failed
             Session::flash('error', 'User created failed. Please try again.');
